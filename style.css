@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f0f1a, #1a1a2e);
+  color: #f5f5f5;
+  padding: 40px;
+  line-height: 1.6;
+}
+
+.hero {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+.hero p {
+  color: #aaa;
+  font-size: 1.2rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 25px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+}
+
+.card h2 {
+  margin-bottom: 15px;
+  color: #ff79c6;
+}
+
+.card ul {
+  list-style: none;
+}
+
+.card li {
+  margin-bottom: 8px;
+}
+
+.skill {
+  margin-bottom: 15px;
+}
+
+.skill span {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.bar {
+  height: 10px;
+  background: #444;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.bar::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+}
+
+/* Programming Languages */
+.python::after { width: 85%; background: #f1fa8c; }
+.js::after     { width: 72%; background: #8be9fd; }
+.css::after    { width: 65%; background: #bd93f9; }
+.cpp::after    { width: 75%; background: #ffb86c; }
+.java::after   { width: 70%; background: #ff5555; }
+.sql::after    { width: 65%; background: #50fa7b; }
+
+/* Other Skills */
+.problem::after { width: 80%; background: #8be9fd; }
+.dsa::after     { width: 72%; background: #bd93f9; }
+.team::after    { width: 78%; background: #f1fa8c; }
+
+.mono {
+  font-style: italic;
+  color: #ddd;
+}
+
+.cta {
+  text-align: center;
+  margin-top: 60px;
+}
+
+.cta a {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 26px;
+  background: #ff79c6;
+  color: #000;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta a:hover {
+  background: #f06292;
+}
